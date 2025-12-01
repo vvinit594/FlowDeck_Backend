@@ -1,0 +1,33 @@
+{
+  "name": "flowdeck-backend",
+  "version": "1.0.0",
+  "description": "FlowDeck Backend API",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:setup": "node src/db/setup.js",
+    "test": "jest"
+  },
+  "keywords": ["flowdeck", "api", "backend"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "zod": "^3.22.4",
+    "nodemailer": "^6.9.7",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  }
+}
